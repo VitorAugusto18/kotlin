@@ -9,6 +9,7 @@ fun main(Args: Array<String>){
     val ger2 = "X"
     val ger3 = "Y"
     val ger4 = "Z"
+    val ger5 = "ALPHA"
     var nome = JOptionPane.showInputDialog("Qual seu nome?")
     var nomeDig = String.format("%s %S", "Olá ", nome)
     JOptionPane.showMessageDialog(null, nomeDig)
@@ -20,13 +21,15 @@ fun main(Args: Array<String>){
         var born = JOptionPane.showInputDialog(null,"Qual o ano do seu nascimento?").toInt()
 
         if(born >=1945 && born <= 1964){
-            JOptionPane.showMessageDialog(null, "Você pertence a geração " +ger1)
+            JOptionPane.showMessageDialog(null, "Você pertence a geração " + ger1)
         }else if(born > 1964 && born <= 1984){
             JOptionPane.showMessageDialog(null, "Você pertence a geração " + ger2)
         }else if(born > 1984 && born <= 1999){
-            JOptionPane.showMessageDialog(null,"Você pertence a geração " + ger3)
-        }else if(born > 2000 && born <= anoAtual){
-            JOptionPane.showMessageDialog(null,"Você pertence a geração "+ ger4)
+            JOptionPane.showMessageDialog(null, "Você pertence a geração " + ger3)
+        }else if(born > 2000 && born <= 2010){
+            JOptionPane.showMessageDialog(null, "Você pertence a geração " + ger4)
+        }else if(born > 2010 && born <= anoAtual){
+            JOptionPane.showMessageDialog(null, "Você pertence a geração " + ger5)
         }else (JOptionPane.showMessageDialog(null, "Sem informação"))
         /*when(born){
             in 1945..1964 -> JOptionPane.showMessageDialog(null, "Você pertence a geração " +ger1)
